@@ -133,49 +133,149 @@ namespace Condicionales_3
             //Console.ReadLine();
 
 
-            // pedir una altura en metros y un peso y obtener el IMC segun tabla
-            // recordar que en el codigo los decimales se ponen con ".", pero en la consola en español se usa ","
-            double altura, peso, imc;
-            Console.WriteLine("introducir valor altura en metros con una , : ");
-            altura = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("introducir valor peso: ");
-            peso = Convert.ToDouble(Console.ReadLine());
-            imc = (peso / Math.Pow(altura, 2));
-            if (imc < 16.00) { Console.WriteLine("Infrapeso: Delgadez Severa: " + imc);
-            }
-            else if (imc >= 16.00 && imc < 17.00)
-            {
-                Console.WriteLine("Infrapeso: Delgadez moderada: " + imc);
-            }
-            else if (imc >= 17.00 && imc < 18.50)
-            {
-                Console.WriteLine("Infrapeso: Delgadez aceptable: " + imc);
-            }
-            else if (imc >= 18.50 && imc < 25.00)
-            {
-                Console.WriteLine("Peso Normal: " + imc);
-            }
-            else if (imc >= 25.00 && imc < 30.00)
-            {
-                Console.WriteLine("Sobrepeso: " + imc);
-            }
-            else if (imc >= 30.00 && imc < 35.00)
-            {
-                Console.WriteLine("Obeso tipo I: " + imc);
-            }
-            else if (imc >= 35.00 && imc <= 40.00)
-            {
-                Console.WriteLine("Sobrepeso Tipo III: " + imc);
-            }
-            else if (imc > 40.00)
-            {
-                Console.WriteLine("Sobrepeso tipo III: " + imc);
-            }
-            else { Console.WriteLine("Esto no es un imc");
-            }
-            Console.ReadLine();
+            //// pedir una altura en metros y un peso y obtener el IMC segun tabla
+            //// recordar que en el codigo los decimales se ponen con ".", pero en la consola en español se usa ","
+            //double altura, peso, imc;
+            //Console.WriteLine("introducir valor altura en metros con una , : ");
+            //altura = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("introducir valor peso: ");
+            //peso = Convert.ToDouble(Console.ReadLine());
+            //imc = peso / Math.Pow(altura, 2);
+            //if (imc < 16.00) { Console.WriteLine("Infrapeso: Delgadez Severa: " + imc);
+            //}
+            //else if (imc >= 16.00 && imc < 17.00)
+            //{
+            //    Console.WriteLine("Infrapeso: Delgadez moderada: " + imc);
+            //}
+            //else if (imc >= 17.00 && imc < 18.50)
+            //{
+            //    Console.WriteLine("Infrapeso: Delgadez aceptable: " + imc);
+            //}
+            //else if (imc >= 18.50 && imc < 25.00)
+            //{
+            //    Console.WriteLine("Peso Normal: " + imc);
+            //}
+            //else if (imc >= 25.00 && imc < 30.00)
+            //{
+            //    Console.WriteLine("Sobrepeso: " + imc);
+            //}
+            //else if (imc >= 30.00 && imc < 35.00)
+            //{
+            //    Console.WriteLine("Obeso tipo I: " + imc);
+            //}
+            //else if (imc >= 35.00 && imc <= 40.00)
+            //{
+            //    Console.WriteLine("Sobrepeso Tipo III: " + imc);
+            //}
+            //else if (imc > 40.00)
+            //{
+            //    Console.WriteLine("Sobrepeso tipo III: " + imc);
+            //}
+            //else { Console.WriteLine("Esto no es un imc");
+            //}
+            //Console.ReadLine();
 
-            //Ejercicios rápidos
+
+            //Ejercicios rápidos condicionales
+
+            ////Ejercicio 1, pide dos numeros y da suma, multiplicación,...
+            //double num1, num2;
+            //Console.WriteLine("escriba un numero");
+            //num1 = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("escriba un numero");
+            //num2 = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("La multiplicación entre " + num1 + " y " + num2 + " es " + (num1 * num2));
+            //Console.WriteLine("la suma entre " + num1 + " y " + num2 + " es " + (num1 + num2));
+            //Console.WriteLine("la resta entre " + num1 + " y " + num2 + " es " + (num1 - num2));
+            //Console.WriteLine("la media de es " + ((num1 + num2) / 2));
+            //Console.WriteLine("el maximo es " + Math.Max(num1, num2));
+            //Console.WriteLine("el minimo es " + Math.Min(num1, num2));
+            //Console.ReadLine();
+
+
+            ////Ejercicio 2, Escribe un programa que pida al usuario 3 números. 
+            ////Si el resultado de la suma de los dos primeros es igual al tercer número, mostrarlo en pantalla, 
+            ////si no mostrar que el tercero no es la suma de los dos anteriores
+            //double num1, num2, num3;
+            //Console.WriteLine("escriba un numero");
+            //num1 = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("escriba un numero");
+            //num2 = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("escriba un numero");
+            //num3 = Convert.ToDouble(Console.ReadLine());
+            //if ((num1 +num2) == num3)
+            //{
+            //    Console.WriteLine(num3);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(num3 + " no es la suma de los dos anteriores");
+            //}
+
+            ////Escribe un programa que convierta los segundos a horas, minutos y segundos
+            //int segundos, minutos;
+            //Console.WriteLine("introduzca segundos");
+            //segundos = Convert.ToInt32(Console.ReadLine());
+            //minutos = (segundos % 3600)/60;
+            //Console.WriteLine("horas: " + (segundos / 3600));
+            //Console.WriteLine("minutos: " + minutos);
+            //Console.WriteLine("Segundos: " + (segundos % 60));
+
+
+            ////Ejemplo de if anidados
+
+            //int num1 = 5, num2 = 6, num3 = 7;
+
+            //if (num1 < num2)
+            //{
+            //    if (num2 < num3)
+            //{
+
+            //}
+            //else if ()
+            //{
+            //    if ()
+            //}
+
+
+
+            //Escribe un programa que pida al usuario tres números y que diga si uno de ellos es 20 menos que uno de los otros.
+            int num1, num2, num3;
+            Console.WriteLine("introduzca un numero");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("introduzca un numero");
+            num2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("introduzca un numero");
+            num3 = Convert.ToInt32(Console.ReadLine());
+            if (num1 < (num2 + 20))
+            {
+                Console.WriteLine(num1 + " es 20 menos que " + num2);
+            }
+            else if (num1 < (num3 + 20))
+            {
+                Console.WriteLine(num1 + " es 20 menos que " + num3);
+            }
+            if (num2 < (num1 + 20))
+            {
+                Console.WriteLine(num2 + " es 20 menos que " + num1);
+            }
+
+            Console.ReadLine();
+            ////Ejercicio n, entrada, saldo y cliente Vip.
+            //bool entrada, vip, saldo;
+            //Console.WriteLine("Ha pagado la entrada?");
+            //entrada = Convert.ToBoolean(Console.ReadLine());
+            //vip = Convert.ToBoolean(Console.ReadLine());
+            //saldo = Convert.ToBoolean(Console.ReadLine());
+            //if (entrada == true)
+            //{
+            //    Console.WriteLine("Bienvenido");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Paga la entrada");
+            //}
+            //Console.ReadLine();
 
 
 
