@@ -119,29 +119,71 @@ namespace Condicionales_3
             //}
             //Console.ReadLine();
 
-            // Ejemplo notas
-            double nota;
-            Console.WriteLine("introducir valor examen: ");
-            nota = Convert.ToDouble(Console.ReadLine());
-            // si no se añade la condicón de >= 0 enla de suspenso, entraran los numeros negativos aquí y no en el else
-            if (nota < 5 && nota >= 0) { Console.WriteLine("Suspenso"); }
-            else if (nota >= 5 && nota < 6) { Console.WriteLine("Aprobado"); }
-            else if (nota >= 6 && nota < 7) { Console.WriteLine("Bien"); }
-            else if (nota >= 7 && nota < 9) { Console.WriteLine("Notable"); }
-            else if (nota >= 9 && nota == 10) { Console.WriteLine("Sobresaliente"); }
-            else { Console.WriteLine("Esto no es una nota, tramposo"); }
+            //// Ejemplo notas
+            //double nota;
+            //Console.WriteLine("introducir valor examen: ");
+            //nota = Convert.ToDouble(Console.ReadLine());
+            //// si no se añade la condicón de >= 0 enla de suspenso, entraran los numeros negativos aquí y no en el else
+            //if (nota < 5 && nota >= 0) { Console.WriteLine("Suspenso"); }
+            //else if (nota >= 5 && nota < 6) { Console.WriteLine("Aprobado"); }
+            //else if (nota >= 6 && nota < 7) { Console.WriteLine("Bien"); }
+            //else if (nota >= 7 && nota < 9) { Console.WriteLine("Notable"); }
+            //else if (nota >= 9 && nota == 10) { Console.WriteLine("Sobresaliente"); }
+            //else { Console.WriteLine("Esto no es una nota, tramposo"); }
+            //Console.ReadLine();
+
+
+            // pedir una altura en metros y un peso y obtener el IMC segun tabla
+            // recordar que en el codigo los decimales se ponen con ".", pero en la consola en español se usa ","
+            double altura, peso, imc;
+            Console.WriteLine("introducir valor altura en metros con una , : ");
+            altura = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("introducir valor peso: ");
+            peso = Convert.ToDouble(Console.ReadLine());
+            imc = (peso / Math.Pow(altura, 2));
+            if (imc < 16.00) { Console.WriteLine("Infrapeso: Delgadez Severa: " + imc);
+            }
+            else if (imc >= 16.00 && imc < 17.00)
+            {
+                Console.WriteLine("Infrapeso: Delgadez moderada: " + imc);
+            }
+            else if (imc >= 17.00 && imc < 18.50)
+            {
+                Console.WriteLine("Infrapeso: Delgadez aceptable: " + imc);
+            }
+            else if (imc >= 18.50 && imc < 25.00)
+            {
+                Console.WriteLine("Peso Normal: " + imc);
+            }
+            else if (imc >= 25.00 && imc < 30.00)
+            {
+                Console.WriteLine("Sobrepeso: " + imc);
+            }
+            else if (imc >= 30.00 && imc < 35.00)
+            {
+                Console.WriteLine("Obeso tipo I: " + imc);
+            }
+            else if (imc >= 35.00 && imc <= 40.00)
+            {
+                Console.WriteLine("Sobrepeso Tipo III: " + imc);
+            }
+            else if (imc > 40.00)
+            {
+                Console.WriteLine("Sobrepeso tipo III: " + imc);
+            }
+            else { Console.WriteLine("Esto no es un imc");
+            }
             Console.ReadLine();
 
-
-
             //Ejercicios rápidos
+
 
 
         }
 
 
 
-        // Pedir el peso y altura, e indicar su Indice de Masa Corporal según tablas OMS
+
 
     }
 }
